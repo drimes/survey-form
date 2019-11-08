@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#container {
+    background: royalblue;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
