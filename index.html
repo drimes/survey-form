@@ -9,8 +9,12 @@
 </head>
 <body>
     <div id="container">
-        <h1 id="title">What is your skill level?</h1>
-        <p id="description">Thank you for taking you time to complete our welding occupation survey.</p>
+        <header>
+            <div id="header">
+                <h1 id="title">What is your skill level?</h1>
+                <p id="description"><i>Thank you for taking you time to complete our welding occupation survey</i></p>
+            </div>
+        </header>
         <form id="survey-form">
             <div>
                 <label id="name-label" for="name">Name</label>
@@ -22,41 +26,35 @@
             </div>
             <div>
                 <label id="number-label" for="number">Age</label>
-                <input type="number" name="age" id="number" min=1 max=200 placeholder="0" required />
+                <input type="number" name="age" id="number" min=1 max=200 placeholder="Age" required />
             </div>
-            <div>
+            <div id="exp">
                 <p>Which option best describes your level of experience?</p>
                 <select name="exp-level" id="dropdown">
-                    <option disabled selected value="">Select your level of experience</option>
+                    <option disabled selected value>Select your level of experience</option>
                     <option value="beginner">Beginner</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="advanced">Advanced</option>
                     <option value="master">Master</option>
                   </select>
             </div>
-            <div>
+            <div id="recommend">
                 <p>How likely would you be to recommend welding as a profession?</p>
-                <input id="yes" type="radio" value="yes" name="recommend">
-                <label for="yes">Yes</label>
-                <input id="no" type="radio" value="no" name="recommend">
-                <label for="no">No</label>
-                <input id="definitely" type="radio" value="definitely" name="recommend">
-                <label for="definitely">Definitely</label>
+                <label for="yes"><input id="yes" type="radio" value="yes" name="recommend">Yes</label>
+                <label for="no"><input id="no" type="radio" value="no" name="recommend">No</label>
+                <label for="definitely"><input id="definitely" type="radio" value="definitely" name="recommend">Definitely</label>
             </div>
-            <div>
-                    <p>What is your favorite welding process?</p>
-                    <input id="stick" type="checkbox" value="stick" name="process">
-                    <label for="stick">Stick</label>
-                    <input id="mig" type="checkbox" value="mig" name="process">
-                    <label for="mig">Mig</label>
-                    <input id="tig" type="checkbox" value="tig" name="process">
-                    <label for="tig">Tig</label>
+            <div id="fav">
+                <p>What is your favorite welding process?</p>
+                <label for="stick"><input id="stick" type="checkbox" value="stick" name="process">Stick</label>
+                <label for="mig"><input id="mig" type="checkbox" value="mig" name="process">Mig</label>
+                <label for="tig"><input id="tig" type="checkbox" value="tig" name="process">Tig</label>
                 </div>
             <div>
                 <p>Any advice for future welder?</p>
                 <textarea name="advice" placeholder="Please leave advise here..."></textarea>
             </div>
-            <div>
+            <div id="sub-btn">
                 <button id="submit">Submit</button>
             </div>
         </form>

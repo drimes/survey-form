@@ -1,11 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: linear-gradient(
+        rgba(93, 95, 252, 0.8), 
+        rgba(93, 95, 252, 0.8)
+      ),url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Migpipe.jpg/1280px-Migpipe.jpg);
+      color: white;
 }
 
 #container {
-    background: royalblue;
-    border-radius: 5px;
-    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#header {
     text-align: center;
+    margin: 25px 0;
+}
+
+#survey-form {
+    background-color: rgba(45, 27, 130, 1);
+    margin: 0 auto;
+    width: 50%;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+    display: block;
+    padding: 10px 0 5px 0;
+}
+
+#name,
+#email,
+#number {
+    display: block;
+    height: 20px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#exp {
+    padding: 10px 0;
+}
+
+#dropdown {
+    display: block;
+    height: 25px;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+#recommend,
+#fav {
+    margin-bottom: 10px;
+}
+
+#recommend > label,
+#fav > label {
+    display: block;
+    padding: 2px 0;
+}
+
+textarea {
+    margin: 10px 0;
+    width: 500px;
+    height: 150px;
+}
+
+#sub-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#submit {
+    flex-basis: 100%;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #821B4F;
+}
+
+button {
+    background-color: #821B4F;
+    color: white;
+    border: none;
+    font-size: 18px;
 }
